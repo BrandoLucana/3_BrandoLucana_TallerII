@@ -1,11 +1,10 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { UsersComponent } from './users/users';
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [UsersComponent],
+  template: `<app-users></app-users>`
 })
-export class App {
-  protected readonly title = signal('api-angular2');
-}
+export class AppComponent { }

@@ -1,0 +1,37 @@
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+h1 { text-align: center; color: #1976d2; }
+.loading { text-align: center; font-size: 1.3rem; margin: 50px; }
+.error {
+  background: #ffebee;
+  color: #c62828;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+.error button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  background: #c62828;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.users-table th, .users-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+.users-table th { background-color: #1976d2; color: white; }
+.users-table tr:hover { background-color: #f5f5f5; }

@@ -1,0 +1,44 @@
+<div class="container">
+  <h1>Lista de Usuarios (Consumo de API)</h1>
+
+  @if (loading()) {
+    <div class="loading">Cargando datos...</div>
+  }
+
+  @if (errorMessage()) {
+    <div class="error">
+      {{ errorMessage() }}
+      <button (click)="loadUsers()">Reintentar</button>
+    </div>
+  }
+
+  @if (!loading() && !errorMessage()) {
+    <table class="users-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Teléfono</th>
+          <th>Ciudad</th>
+          <th>Empresa</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (user of users(); track user.id) {
+          <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.phone }}</td>
+            <td>{{ user.address.city }}</td>
+            <td>{{ user.company.name }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+    <p>Mostrando {{ users().length }} registros</p>
+  }
+</div>
