@@ -7,7 +7,8 @@ Aplicación Angular que consume la API pública de JSONPlaceholder y muestra una
 ## Captura de la aplicación
 AQUI SE ENCUENTRA LA CAPTURA COMO 2da EVIDENCIA en la carpeta de "assets"
 
-![App funcionando](assets/captura.png)
+![App funcionando](assets/Captura de pantalla.png)
+
 
 ## Cómo ejecutar
 ```bash
